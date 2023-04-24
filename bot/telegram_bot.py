@@ -1031,3 +1031,8 @@ class ChatGPTTelegramBot:
         application.add_error_handler(self.error_handler)
 
         application.run_polling()
+        # application.start_webhook(listen="0.0.0.0",
+        #               port=int(os.environ.get('PORT', 8080)),
+        #               url_path=TELEGRAM_BOT_TOKEN,
+        #               webhook_url=  + TELEGRAM_BOT_TOKEN
+        #               )
